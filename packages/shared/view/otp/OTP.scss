@@ -1,0 +1,24 @@
+@import "../shared/style/Variables.scss";
+
+.resend-otp-btn {
+  background: $white 0% 0% no-repeat padding-box;
+  border: 2px solid $primary-color;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    background-color: $primary-color;
+    border-color: $primary-color !important;
+    span {
+      color: $white;
+    }
+  }
+}
+.otp-text-top {
+  color: $primary-color;
+}
+
+.back-icon {
+  cursor: pointer;
+  border: 1px solid $black;
+  color: $black;
+  font-size: 1.5rem;
+}

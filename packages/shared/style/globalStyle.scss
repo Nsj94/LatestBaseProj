@@ -1,0 +1,104 @@
+@import "./Variables.scss";
+
+.input-theme {
+  color: $primary-color;
+  border: 1px solid $primary-color;
+  min-height: 60px;
+  box-shadow: none;
+
+  &:hover {
+    border-color: $light-primary-color !important;
+  }
+  input {
+    font-size: 1.2rem;
+    &::placeholder {
+      font-size: 1.2rem;
+    }
+  }
+}
+.input-icon {
+  font-size: 1.4rem !important;
+}
+
+.search-input-theme {
+  span {
+    input {
+      border: 1px solid $primary-color;
+      min-height: 60px;
+      &::placeholder {
+        font-size: 1.2rem;
+      }
+    }
+    span {
+      button {
+        font-size: 1rem;
+        padding: 1.2rem;
+        min-height: 60px !important;
+        font-size: 1.2rem;
+        border-left: none;
+        border-color: $primary-color;
+        @extend .d-flex, .align-items-center, .justify-content-center;
+        &:where(.css-dev-only-do-not-override-sk7ap8).ant-btn.ant-btn-icon-only {
+          min-width: 50px;
+        }
+      }
+    }
+  }
+}
+
+.theme-btn {
+  color: $white;
+  font-size: 1.4rem;
+  padding: 15px 40px;
+  background-color: $primary-color;
+  transition: all 0.2s ease-in-out;
+
+  @extend .d-flex, .h-100, .align-items-center, .justify-content-center;
+  .icon {
+    color: $white;
+    border: 1px solid $white;
+    transition: all 0.5s ease-in-out;
+    @extend .p-1, .rounded-circle;
+  }
+  &:hover {
+    color: $primary-color !important;
+    background-color: $white !important;
+    border-color: $primary-color !important;
+    .icon {
+      color: $primary-color !important;
+      background-color: $white !important;
+      border-color: $primary-color !important;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .input-theme {
+    min-height: 60px;
+    box-shadow: none;
+    input {
+      font-size: 1rem;
+      &::placeholder {
+        font-size: 0.8rem !important;
+      }
+    }
+  }
+  .search-input-theme {
+    span {
+      input {
+        min-height: 40px;
+      }
+      span {
+        button {
+          min-height: 40px !important;
+        }
+      }
+    }
+  }
+
+  .theme-btn {
+    color: $white;
+    font-size: 1.2rem;
+    padding: 1rem;
+  }
+}

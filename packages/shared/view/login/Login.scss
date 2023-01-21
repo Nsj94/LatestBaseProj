@@ -1,0 +1,97 @@
+@import "../shared/style/utility.scss";
+@import "../shared/style/Variables.scss";
+
+.login-bg-image {
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center center;
+}
+.login-form-wrapper {
+  width: 100%;
+  min-height: 100vh;
+  padding: 0 1rem;
+  max-width: 500px;
+}
+.login-logo {
+  img {
+    object-fit: cover;
+    // max-width: 100px;
+    min-height: 120px;
+  }
+}
+
+.login-title {
+  color: $heading-color;
+  font-size: 3rem;
+}
+.login-subtext {
+  font-size: 1.2rem;
+  color: $light-gray;
+  a {
+    color: $primary-color;
+    text-decoration: none;
+  }
+}
+
+label.login-label {
+  font-size: 1.3rem;
+}
+
+.login-tabs {
+  .ant-tabs-nav-list {
+    .ant-tabs-tab {
+      color: $light-gray;
+    }
+    .ant-tabs-tab-active {
+      .ant-tabs-tab-btn {
+        color: $black;
+      }
+    }
+    .ant-tabs-ink-bar {
+      background-color: $primary-color;
+    }
+  }
+}
+
+.login-tab-title {
+  font-size: 1.2rem;
+}
+
+@media screen and(max-width:1440px) {
+}
+
+@media screen and(max-width:1024px) {
+}
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 480px) {
+  .login-tab-title {
+    font-size: 1rem;
+  }
+
+  .login-title {
+    color: $heading-color;
+    font-size: 2rem;
+  }
+  .login-form-wrapper {
+    width: 85%;
+  }
+
+  label.login-label {
+    font-size: 1.2rem;
+  }
+  .login-subtext {
+    font-size: 1.1rem;
+  }
+  .input-theme {
+    min-height: 50px;
+    input {
+      font-size: 1.1rem;
+      &::placeholder {
+        font-size: 1.1rem;
+      }
+    }
+  }
+}

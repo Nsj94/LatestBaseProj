@@ -1,0 +1,22 @@
+.admin-list-layout {
+  .title-bar {
+    padding: 15px;
+
+    .icon {
+      svg {
+        font-size: 30px;
+      }
+    }
+
+    .ant-typography {
+      margin: 0;
+    }
+  }
+}
+
+.manage-order-title {
+  font-size: 1.3rem;
+}
+.admin-footer {
+  padding: 20px !important;
+}

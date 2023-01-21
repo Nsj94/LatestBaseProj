@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  -webkit-transition: -webkit-box-shadow 0.1s ease-in;
+  transition: -webkit-box-shadow 0.1s ease-in;
+  transition: box-shadow 0.1s ease-in;
+  transition: box-shadow 0.1s ease-in, -webkit-box-shadow 0.1s ease-in;
+}
+
+.markdown h1 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #e30513;
+  text-transform: uppercase;
+}
+
+.markdown h2 {
+  font-size: 18px;
+}
+/*# sourceMappingURL=Variables.css.map */

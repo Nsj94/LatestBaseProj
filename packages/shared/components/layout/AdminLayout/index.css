@@ -1,0 +1,12 @@
+.admin-list-layout .title-bar {
+  padding: 15px;
+}
+
+.admin-list-layout .title-bar .icon svg {
+  font-size: 30px;
+}
+
+.admin-list-layout .title-bar .ant-typography {
+  margin: 0;
+}
+/*# sourceMappingURL=index.css.map */
